@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Are My Everything - 2026</title>
+    <link rel="stylesheet" href="love.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="hearts-background"></div>
+    <div class="sparkles"></div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Opening Screen -->
+        <div class="opening-screen animate__animated animate__fadeIn">
+            <div class="envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <h2 class="envelope-text">Open Your Heart</h2>
+                    <div class="heart-icon">💌</div>
+                </div>
+            </div>
+            <p class="instruction">Click the envelope to begin</p>
+        </div>
+
+        <!-- Main Proposal Content (Hidden Initially) -->
+        <div class="proposal-content" id="proposalContent">
+            <!-- Step 1: Her Name -->
+            <div class="step" id="step1">
+                <div class="name-input-container">
+                    <h1 class="main-title">For My Dearest</h1>
+                    <div class="input-group">
+                        <input type="text" id="herName" placeholder="Enter your beautiful name" maxlength="20">
+                        <button id="nameConfirm" class="btn-continue">
+                            <i class="fas fa-heart"></i> Continue
+                        </button>
+                    </div>
+                    <p class="hint">This experience is personalized just for you</p>
+                </div>
+            </div>
+
+            <!-- Step 2: Love Story -->
+            <div class="step hidden" id="step2">
+                <div class="love-story">
+                    <h2>Our Story Begins...</h2>
+                    <div class="timeline">
+                        <div class="moment">
+                            <div class="moment-icon">💫</div>
+                            <div class="moment-text">The moment I first saw you</div>
+                        </div>
+                        <div class="moment">
+                            <div class="moment-icon">✨</div>
+                            <div class="moment-text">Every smile you've given me</div>
+                        </div>
+                        <div class="moment">
+                            <div class="moment-icon">🌟</div>
+                            <div class="moment-text">Every laugh we've shared</div>
+                        </div>
+                        <div class="moment">
+                            <div class="moment-icon">💖</div>
+                            <div class="moment-text">Every memory we've created</div>
+                        </div>
+                    </div>
+                    <button id="continueStory" class="btn-continue">
+                        <i class="fas fa-forward"></i> Our Journey Continues
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 3: Reasons I Love You -->
+            <div class="step hidden" id="step3">
+                <div class="reasons-container">
+                    <h2><span id="dynamicName">My Love</span>, Here's Why You're Perfect</h2>
+                    <div class="reasons-grid" id="reasonsGrid">
+                        <!-- Reasons will be generated here -->
+                    </div>
+                    <button id="continueReasons" class="btn-continue">
+                        <i class="fas fa-heart-circle-plus"></i> And So Many More Reasons...
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 4: The Big Question -->
+            <div class="step hidden" id="step4">
+                <div class="proposal-question">
+                    <div class="ring-animation">
+                        <div class="ring"></div>
+                        <div class="diamond"></div>
+                    </div>
+                    
+                    <h1 class="proposal-text">
+                        <span id="finalName">My Love</span>,<br>
+                        You Complete My Universe
+                    </h1>
+                    
+                    <div class="question-box animate__animated animate__pulse animate__infinite">
+                        <p class="question">Will you make me the happiest person in the world?</p>
+                        <p class="question">Will you be my Valentine forever?</p>
+                        
+                        <div class="answer-buttons">
+                            <button id="yesBtn" class="btn-yes">
+                                <i class="fas fa-heart-circle-check"></i>
+                                <span>YES!</span>
+                                <div class="yes-effect">💖</div>
+                            </button>
+                            
+                            <button id="noBtn" class="btn-no">
+                                <i class="fas fa-heart-crack"></i>
+                                No
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="promise">
+                        <p>I promise to cherish you, support you, and love you more every single day</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: She Said YES! -->
+            <div class="step hidden" id="step5">
+                <div class="celebration">
+                    <div class="confetti-container"></div>
+                    
+                    <h1 class="celebration-title">
+                        <i class="fas fa-heart"></i>
+                        SHE SAID YES!
+                        <i class="fas fa-heart"></i>
+                    </h1>
+                    
+                    <div class="celebration-message">
+                        <p class="congrats">Congratulations! You've made the best decision!</p>
+                        <p class="message">This moment will be remembered forever</p>
+                        
+                        <div class="certificate">
+                            <h3>Certificate of Eternal Love</h3>
+                            <p>This certifies that <span id="certificateName">[Her Name]</span></p>
+                            <p>has agreed to be my Valentine for all eternity</p>
+                            <div class="signatures">
+                                <div class="signature-line">Signed with love,</div>
+                                <div class="signature-name">Your Future Husband ❤️</div>
+                            </div>
+                            <div class="date">February 14, 2026 - Forever ❤️</div>
+                        </div>
+                    </div>
+                    
+                    <button id="shareBtn" class="btn-share">
+                        <i class="fas fa-share-heart"></i> Share Our Love Story
+                    </button>
+                    
+                    <div class="final-message">
+                        <p>Check your phone for a special surprise message! 📱</p>
+                        <p class="countdown">Our journey begins in: <span id="loveCountdown">00:00:00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Music Controls - UPDATED with better controls -->
+        <div class="music-controls">
+            <button id="musicToggle" class="btn-music">
+                <i class="fas fa-music"></i>
+                <span id="musicText">Play Romantic Song</span>
+            </button>
+            <audio id="loveSong" loop preload="auto">
+                <!-- Add your song file here - save it in the same folder -->
+                <source src="your-romantic-song.mp3" type="audio/mpeg">
+                <!-- Fallback online song if your file doesn't load -->
+                <source src="https://assets.mixkit.co/music/preview/mixkit-loving-you-117.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Progress Indicator -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <div class="progress-steps">
+                <span class="step-dot active" data-step="1">1</span>
+                <span class="step-dot" data-step="2">2</span>
+                <span class="step-dot" data-step="3">3</span>
+                <span class="step-dot" data-step="4">4</span>
+                <span class="step-dot" data-step="5">5</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden elements for effects -->
+    <div id="floatingHearts"></div>
+    <div id="surpriseMessage" class="hidden"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/confetti-js/0.0.18/confetti.browser.min.js"></script>
+    <script src="proposal.js"></script>
+</body>
+                  </html>
